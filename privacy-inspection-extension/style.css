@@ -1,0 +1,135 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 14px;
+  padding: 8px;
+  width: 365px;
+  background: linear-gradient(135deg, #381083, #cdc6f1);
+  overflow: visible;
+  color: #1f2937;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 22px;
+  text-align: center;
+  color: #d7c5f8;
+}
+
+h3 {
+  margin-top: 0;
+  text-align: center;
+  font-size: 16px;
+  padding: 8px;
+  color: #401880;
+}
+
+/* ===== CARD LAYOUT ===== */
+.card {
+  background: #e2d6f1;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+/* ===== TEXT ===== */
+#summary p,
+#trackerPurpose p,
+#riskInsight p {
+  margin: 5px 0;
+}
+
+/* ===== RISK ===== */
+.risk-text {
+  font-weight: bold;
+}
+
+.risk-low  { color: #41dd82; }   
+.risk-med  { color: #f39c12; }   
+.risk-high { color: #e74c3c; }   
+
+/* ===== TRACKER LIST ===== */
+.tracker-item {
+  padding: 6px;
+  margin-bottom: 6px;
+  border-left: 4px solid #9d5df0;
+  background: #d9caee;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.tracker-purpose {
+  color: #555;
+  font-style: italic;
+  font-size: 11px;
+}
+
+/* ===== TOOLTIP ===== */
+.info-wrap { 
+  position: relative; 
+  display: inline-block; 
+  margin: 12px 0 16px 0; 
+}
+
+.tooltip-panel {
+  position: absolute;  
+  bottom: 10px;
+  left: 10px;
+
+  width: 260px;
+  max-height: 300px;
+  overflow-y: auto;
+
+  background: #e2d6f1;
+  border: 1px solid #d1d0d3;
+  border-radius: 10px;
+  padding: 12px;
+
+  font-size: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+
+  display: none;
+  z-index: 9999;
+}
+
+/* Show panel */
+.tooltip-panel.active {
+  display: block;
+}
+
+/* Button styling */
+.info {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #8552e4;
+  background: rgb(184, 154, 224);
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ===== PURPOSE TAGS ===== */
+.purpose-tag {
+  display: inline-block;
+  padding: 2px 6px;
+  margin: 2px 2px 0 0;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: bold;
+  color: #e2d6f1;
+}
+
+/* Severity levels */
+.sev-safe { background: #2ecc71; }
+.sev-low { background: #3498db; }
+.sev-med { background: #f39c12; }
+.sev-high { background: #e67e22; }
+.sev-critical { background: #e74c3c; }
+.sev-unknown { background: #7f8c8d; }

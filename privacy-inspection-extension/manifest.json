@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Web Privacy Inspector",
+  "version": "1.0",
+  "description": "Monitor what data a website is collecting in real-time.",
+  "permissions": [
+    "tabs",
+    "webRequest",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+  {
+    "resources": ["trackerlists/*.txt"],
+    "matches": ["<all_urls>"]
+  }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  }
+}

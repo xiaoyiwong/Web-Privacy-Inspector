@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Web Privacy Inspector</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Web Privacy Inspector</h2>
+
+  <div class="card">
+    <h3>Request Summary</h3>
+    <div id="summary"></div>
+  </div>
+
+  <div class="card">
+    <h3>Tracker Behaviour</h3>
+    <div id="trackerPurpose"></div>
+  </div>
+
+  <div class="card">
+    <h3>Privacy Insight</h3>
+    <div id="riskInsight"></div>
+  </div>
+
+  <div class="info-wrap">
+    <button id="infoBtn" class="info">i</button>
+
+    <div id="infoPanel" class="tooltip-panel">
+      <b>First-party:</b> Requests sent directly to the website you are visiting.<br><br>
+
+      <b>Third-party:</b> Requests sent to external domains such as ads, trackers, or embedded services.<br><br>
+
+      <b>Tracker Categories:</b><br>
+      - <b>Ads:</b> Advertising networks that track user activity for targeted ads.<br>
+      - <b>Tracking:</b> General tracking services that collect browsing behaviour.<br>
+      - <b>Social Media:</b> Embedded social platforms (e.g. share buttons, feeds).<br>
+      - <b>Redirect:</b> Services that redirect users, often used in tracking chains.<br>
+      - <b>Gambling:</b> Domains related to betting platforms, sometimes linked with aggressive tracking.<br><br>
+
+      <b>High-Risk Categories:</b><br>
+      - <b>Phishing / Scam / Fraud:</b> Attempt to steal personal or financial information.<br>
+      - <b>Ransomware / Malware:</b> Associated with malicious software or attacks.<br>
+      - <b>Abuse:</b> Suspicious or potentially harmful infrastructure.<br><br>
+
+      <b>Connection Security:</b><br>
+      - HTTPS = Secure encrypted connection<br>
+      - HTTP = Insecure (data can be intercepted)<br><br>
+
+      <b>Risk Level:</b><br>
+      Calculated based on the number and type of third-party requests.<br>
+      More tracking or high-risk domains = higher risk level.<br><br>
+
+      <b>Note:</b><br> This extension uses external blocklists to classify trackers and assess risk.
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Detected Trackers</h3>
+    <div id="trackerList"></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
