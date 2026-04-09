@@ -4,6 +4,8 @@ If u are seeing this, that means u have been selected as a tester for this exten
 I will give you a pre-usage and post-usage form to fill in to gauge the effectiveness of this extension and it will become the testing data for my report.
 Thank you for participating in this test and I hope that this extension will pique your interest regarding the digital landscape of online tracking mechanisms.
 
+Before using the extension, please fill in this questionnaire: https://forms.gle/p2GmQKh1UL6rrWav7
+
 To import this extension:
 1. Download the file privacy-inspection-extension.
 2. Go to your browser settings and find the extension tab.
@@ -11,3 +13,5 @@ To import this extension:
 4. Click load unpacked and find the directory where you have downloaded the extension file.
 5. Select the folder and enable the extension in the extension tab.
 6. Done! Now you can go to any website and use the extension to see all the trackers that are tracking you.
+
+After using the extension for awhile, do fill in this post-usage questionnaire to help me gauge its effectiveness: https://forms.gle/AGRz3Je5r5S5UuPEA
