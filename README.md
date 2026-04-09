@@ -1,6 +1,6 @@
 Hello!
 This extension is made as a project for my Final Year Project.
-If u are seeing this, that means u have been selected as a tester for this extension.
+If you are seeing this, that means you have been selected as a tester for this extension.
 I will give you a pre-usage and post-usage form to fill in to gauge the effectiveness of this extension and it will become the testing data for my report.
 Thank you for participating in this test and I hope that this extension will pique your interest regarding the digital landscape of online tracking mechanisms.
 
